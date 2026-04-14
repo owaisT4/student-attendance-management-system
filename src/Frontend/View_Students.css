@@ -1,0 +1,65 @@
+/* Container */
+.view-student-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #1e2a38;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ecf0f1;
+}
+
+/* Header */
+.view-student-header {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ecf0f1;
+}
+
+/* Table */
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+/* Table header */
+.student-table thead tr {
+  background-color: #34495e;
+  color: #fff;
+}
+
+.student-table th,
+.student-table td {
+  padding: 12px;
+  border: 1px solid #2c3e50;
+  text-align: left;
+}
+
+/* Table body rows */
+.student-table tbody tr {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  transition: background 0.3s ease;
+}
+
+/* Hover effect on rows */
+.student-table tbody tr:hover {
+  background-color: #3b5163;
+}
+
+/* Responsive table */
+@media(max-width: 768px) {
+  .student-table th,
+  .student-table td {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .view-student-header {
+    font-size: 1.5rem;
+  }
+}

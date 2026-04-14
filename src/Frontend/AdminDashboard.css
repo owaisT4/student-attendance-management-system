@@ -1,0 +1,150 @@
+.dashboard-wrapper {
+  display: flex;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  background-color: #f4f6f8;
+}
+
+/* Sidebar panel */
+.dashboard-panel {
+  width: 220px;
+  background-color: #1f2937;
+  color: #fff;
+  padding: 20px;
+}
+
+.dashboard-panel h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-panel ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dashboard-panel li,
+.dashboard-panel a {
+  display: block;
+  color: #fff;
+  padding: 10px 15px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.dashboard-panel li.active,
+.dashboard-panel li:hover,
+.dashboard-panel a:hover {
+  background-color: #374151;
+}
+
+/* Main dashboard area */
+.dashboard-main {
+  flex: 1;
+  padding: 30px;
+}
+
+.dashboard-main h1 {
+  margin-bottom: 10px;
+  color: #374151;
+}
+
+.dashboard-main p {
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* Dashboard cards */
+.dashboard-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 180px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #374151;
+}
+
+.card p {
+  font-size: 28px;
+  font-weight: bold;
+  color: #111827;
+}
+
+.students-card { border-top: 4px solid #3b82f6; }
+.teachers-card { border-top: 4px solid #10b981; }
+.classes-card { border-top: 4px solid #f59e0b; }
+
+.attendance-table,
+.attendance-table th,
+.attendance-table td {
+  color: black;
+}
+
+.attendance-section {
+  margin-top: 30px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.attendance-table th {
+  background: #2c3e50;
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+.attendance-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.attendance-table tr:hover {
+  background: #f5f5f5;
+}
+
+.present {
+  color: green;
+  font-weight: bold;
+}
+
+.absent {
+  color: red;
+  font-weight: bold;
+}
+
+.table-wrapper {
+  max-height: 400px;   /* controls height */
+  overflow-y: auto;    /* enables vertical scroll */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}

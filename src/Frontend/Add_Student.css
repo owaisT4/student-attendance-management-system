@@ -1,0 +1,82 @@
+/* --- Add Student Container --- */
+.add-student-container {
+    max-width: 500px;
+    margin: 80px auto;
+    padding: 40px 30px;
+    background-color: #2c3e50;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    color: #ecf0f1;
+    transition: all 0.3s ease;
+}
+
+/* Header */
+.add-student-header h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #ecf0f1;
+}
+
+/* Form styling */
+.Student-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Inputs */
+.Student-form input {
+    padding: 15px 20px;
+    border-radius: 12px;
+    border: none;
+    font-size: 1rem;
+    background-color: #34495e;
+    color: #ecf0f1;
+    transition: all 0.3s ease;
+}
+
+.Student-form input::placeholder {
+    color: #bdc3c7;
+}
+
+/* Input hover/focus */
+.Student-form input:focus {
+    outline: none;
+    background-color: #3b5163;
+    box-shadow: 0 0 10px rgba(155, 89, 182, 0.5);
+}
+
+/* Button */
+.Student-form button {
+    padding: 15px 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #fff;
+    background: linear-gradient(45deg, #8e44ad, #9b59b6);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+/* Button hover */
+.Student-form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    background: linear-gradient(45deg, #9b59b6, #8e44ad);
+}
+
+/* Responsive */
+@media(max-width: 600px) {
+    .add-student-container {
+        margin: 50px 20px;
+        padding: 30px 20px;
+    }
+    .Student-form input, .Student-form button {
+        font-size: 1rem;
+        padding: 12px 15px;
+    }
+}
